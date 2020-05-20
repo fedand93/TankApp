@@ -1,0 +1,97 @@
+.nav {
+	
+}
+.navbar {
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+	color: #2d394c;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 47px;
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: 0.84;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: #54a3da;
+	opacity: 0.84;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 47px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #54a3da;
+	text-decoration: none;
+}
+.navbar-collapse {
+	border-radius: 18px;
+    padding: 0px 0px 0px 48px;
+    z-index: 2;
+    text-align: center;
+}
+
+.foot-nav {
+	display: flex;
+    align-items: center;
+}
+
+.foot-nav-item {
+	opacity: 0.9;
+	color: #4d5664;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 28.97px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 18px;
+}
+
+.foot-nav-item:nth-child(5) {
+	border-right: 1px #4d5664 solid;
+}
+
+
+.foot-nav-item:hover {
+	border-bottom: 1px solid #54a3da;
+	color: #54a3da;
+}
+
+.nav .nav-item .is-active {
+	color: #a1a4a9;
+}
+
+
+@media (max-width: 820px) {
+	.navbar-expand-mg .navbar-nav .nav-link {
+	    padding-right: 16.5px;
+	    padding-left: 16.5px;
+	}    
+	.navbar-expand-lg .navbar-collapse {
+		background-color: #ffffff;
+		border-radius: 0;
+	}
+	.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+	}
+
+@media (max-width: 767px) {
+	.navbar-collapse {
+		border-radius: 18px;
+	    background-color: #ffce54;
+	    padding: 0px 0px 0px 48px;
+	    z-index: 2;
+	    text-align: center;
+	}
+}
+

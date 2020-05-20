@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 47px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #2d394c;
+  line-height: 18px;
+}
+
+.container {
+  max-width: 1259px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  align-self: center;
+}
+
+.logo-img {
+  margin: 0px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: #f7f6f2;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+h2 {
+  color: #2d394c;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 133px;
+  text-transform: uppercase;
+}
+h3 {
+  color: #2d394c;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+p {
+  color: #9499a2;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+a {
+  color: #2d394c;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #54a3da;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+p,
+ul,
+ol,
+figure {
+  margin: 0 0 16px 0;
+}
+
+* + p,
+* + ul,
+* + ol * + figure {
+  margin-top: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 0.67em;
+}
+
+@media (max-width: 720px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,36 @@
+.breadcrumb-diffrent {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.breadcrumb-diffrent > li {
+  padding: 9px 17px;
+}
+.breadcrumb-diffrent > li > a {
+  opacity: 0.27;
+  color: #2d394c;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 0 0 0;
+  text-decoration: none;
+}
+.breadcrumb-diffrent li:first-child {
+  border: 2px solid #64a4d7;
+  border-radius: 25px;
+  background-color: #64a4d7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+#breadcrumb:first-child {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}

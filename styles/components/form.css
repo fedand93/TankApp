@@ -1,0 +1,285 @@
+.form {
+  display: flex;
+  align-items: baseline;
+}
+
+.form-mail {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.form-control {
+    position: relative;
+    margin-right: 37px;
+    background: none;
+    margin-top: 25px;
+    width: 425px;
+    display: inline-block;
+    height: auto;
+    padding: 0 .0;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    line-height: 1.5;
+    color: #495057;
+}
+
+
+.form-large {
+  position: relative;
+  margin-right: 36px;
+  margin-top: 47px;
+  display: flex;
+  height: auto;
+  padding: 0 .0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  width: 630px;
+}
+.form-title {
+  color: #f7f7f7;
+  font-family: "Ubuntu - Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33px;
+  padding-top: 60px;
+}
+.form-span {
+  background-color: #ffce54;
+  border-radius: 4px; 
+  border: 0.1px #ffce54 solid;
+  padding: 9px;
+}
+.input,
+.select,
+.textarea {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px 28px;
+  background-color: #fff;
+  color: #666;
+  margin: 0;
+  border-radius: 4px;
+  font-size: inherit;
+}
+.input {
+  height: 54px;
+  width: 425px
+}
+
+.input-large {
+  height: 70px;
+  width: 632px;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+i {
+  position: absolute;
+  left: 1.5em;
+  top: 1.5em;
+}
+
+.input-large, .select, .textarea {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  padding: 24px 25px 25px 71px;
+  background-color: #fff;
+  color: #666;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 34.1px;
+  width: 632px;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: blue;
+}
+
+.input:disabled,
+.select:disabled,
+.textarea:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+  border-color: #999;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #999;
+}
+
+.textarea {
+  resize: none;
+  height: 200px;
+}
+
+.input-danger,
+.input-danger:focus {
+  color: red;
+  border-color: red;
+}
+
+.input-success,
+.input-success:focus {
+  color: green;
+  border-color: green;
+}
+
+.input-blank {
+  background-color: none;
+  border-color: transparent;
+}
+.input-blank:focus {
+  background-color: #e5e5e5;
+  border-style: dashed;
+}
+
+.form-error-message {
+  color: red;
+  position: absolute;
+  bottom: -16px;
+  display: none;
+}
+
+.input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.input:invalid:not(:placeholder-shown) + .form-error-message {
+  display: block;
+}
+
+.form-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.form-icon:hover {
+  color: #666;
+}
+
+.form-icon:not(a):not(button):not(input) {
+  pointer-events: none;
+}
+
+.form-icon-flip {
+  right: 0;
+  left: auto;
+}
+
+.form-icon:not(.form-icon-flip) ~ .input {
+  padding-left: 40px !important;
+}
+.form-icon-flip ~ .input {
+  padding-right: 40px !important;
+}
+
+
+@media (max-width: 860px) {
+  .input-large {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .form-title {
+    text-align: center;
+  }
+  .form {
+    justify-content: space-around;
+  }
+  .form-control {
+    margin: 0px 36px 0px 0;
+    background-color: #fff0;
+    border: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .input-large, .select, .textarea {
+    padding: 24px 24px 25px 71px;
+  }
+}
+
+@media (max-width: 640px) {
+  .input {
+    width: 100%;
+  }
+  .input-large {
+    width: 100%;
+  }
+  .form-large {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .form-mail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .input {
+    width: inherit;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .input {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-control {
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-large {
+    margin-right: 0px;
+    width: 99%;
+  }
+}
+
+@media (max-width: 320px) {
+  .form {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .input-large {
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+  }
+}
